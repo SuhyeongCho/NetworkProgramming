@@ -36,7 +36,6 @@ public class RmiChattingImpl extends UnicastRemoteObject implements RmiChatting 
 		"\"/UnReady.\" : 준비를 취소합니다.\n" +
 		"\"/Start.\" : 게임을 시작합니다.\n" +
 		"\"/Kill.\" : 죽일 사람을 투표합니다.\n" +
-		"\"/Unkilled.\" : 투표를 취소합니다.\n" +
 		"\"/Help.\" : 도움말을 출력합니다.\n" + 
 		"===================================";
 	}

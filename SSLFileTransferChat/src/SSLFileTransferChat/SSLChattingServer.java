@@ -22,7 +22,7 @@ public class SSLChattingServer implements Runnable {
 	KeyStore keystore;
 	KeyManagerFactory keymanagerfactory;
 	SSLContext sslcontext;
-	String runRoot = "/Users/suhyeongcho/Desktop/VER5/src/.keystore/SSLSocketServerKey";
+	String runRoot = "/Users/suhyeongcho/eclipse-workspace/SSLFileTransferChat/src/.keystore/SSLSocketServerKey";
 	
 	SSLServerSocketFactory serversocketfactory = null;
 	SSLServerSocket server = null;
