@@ -176,7 +176,13 @@ public class SSLChattingServer implements Runnable {
 		clients[my].out.println("===================================");
 
 	}
+	public static void unkilledAll() {
+		for (int i = 0;i<clientNumber;i++) {
+			killedSomeone[i] = 0;
+		}
+		killCount = 0;
 
+	}
 	public static void killed(int clientPort,int killedPort) {
 		boolean isPort = false;
 		int my = 0;
@@ -210,8 +216,9 @@ public class SSLChattingServer implements Runnable {
 			if (killing[0] == 1 && killing[1] == 1 && killing[2] == 1){
 				for(int i=0;i<clientNumber;i++) {
 					clients[i].out.println("재투표해주세요.");
-					unkilled(clients[i].clientPort);
 				}
+				unkilledAll();
+
 			} else {
 				int max = 0;
 				for(int i=0;i<clientNumber;i++) {
